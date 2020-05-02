@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat|Roboto|Caveat&display=swap" rel="stylesheet">
+    <title>Foody Buddy</title>
+    <!-- Boot Strap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="sign.css">
+    <link rel="stylesheet" href="animate.css">
+    <script src="https://kit.fontawesome.com/15f26acd7c.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="container-body">
+        <div class="container-sign animated" id="container">
+            <div class="form-container sign-up-container">
+                <button id="close-btn-left"><i class="far fa-times-circle"></i></button>
+                <div class="sign-logo">
+                    <a class="navbar-brand" href=""><i class="fas fa-utensils nav-icon sign-icon"></i> <span class="logo-foody sign-foody">Foody</span> <span class="buddy-logo">Buddy</span></a>
+                </div>
+                <form class="sign-form" action="#">
+                    <h1 class="sign-h1">Create Account</h1>
+                    <!-- <div class="social-container">
+                        <a class="sign-a" href="#" class="social"><i class="fab fa-facebook-f"></i></a>
+                        <a class="sign-a" href="#" class="social"><i class="fab fa-google-plus-g"></i></a>
+                        <a class="sign-a" href="#" class="social"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                    <span class="sign-span">or use your email for registration</span> -->
+                    <input class="sign-input" type="text" placeholder="Name" />
+                    <input class="sign-input" type="email" placeholder="Email" />
+                    <input class="sign-input" type="password" placeholder="Password" />
+                    <button class="sign-btn">Sign Up</button>
+                </form>
+            </div>
+            <div class="form-container sign-in-container">
+                <div class="sign-logo">
+                    <a class="navbar-brand" href=""><i class="fas fa-utensils nav-icon sign-icon"></i> <span class="logo-foody sign-foody">Foody</span> <span class="buddy-logo">Buddy</span></a>
+                </div>
+                <form class="sign-form" action="#">
+                    <h1 class="sign-h1">Sign in</h1>
+                    <!-- <div class="social-container">
+                        <a class="sign-a" href="#" class="social"><i class="fab fa-facebook-f"></i></a>
+                        <a class="sign-a" href="#" class="social"><i class="fab fa-google-plus-g"></i></a>
+                        <a class="sign-a" href="#" class="social"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                    <span class="sign-span">or use your account</span> -->
+                    <input class="sign-input" type="email" placeholder="Email" />
+                    <input class="sign-input" type="password" placeholder="Password" />
+                    <a class="sign-a" href="#">Forgot your password?</a>
+                    <button class="sign-btn">Sign In</button>
+                </form>
+            </div>
+            <div class="overlay-container">
+                <div class="overlay">
+                    <div class="overlay-panel overlay-left">
+                        <h1 class="sign-h1-tag">Order Now!</h1>
+                        <p class="sign-para">To eat more delicious food, login with your personal info.</p>
+                        <button class="ghost sign-btn" id="signIn">Sign In</button>
+                    </div>
+                    <div class="overlay-panel overlay-right">
+                        <button id="close-btn-right"><i class="far fa-times-circle"></i></button>
+                        <h1 class="sign-h1-tag">Hungry?</h1>
+                        <p class="sign-para">Enter your personal details and start Ordering.</p>
+                        <button class="ghost sign-btn" id="signUp">Sign Up</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <main id="main-section">
+        <section class="nav-bar-section">
+            <nav class="navbar navbar-dark navbar-expand-lg fixed-top">
+                <a class="navbar-brand animated tada delay-5s" href=""><i class="fas fa-utensils nav-icon"></i> <span class="logo-foody">Foody</span> <span class="buddy-logo">Buddy</span></a>
+                <button class="navbar-toggler " type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon nav-button"></span>
+            </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#about-us">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Menu</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contact">Contact Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="sign-in-link" href="#">Sign In</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </section>
+        <section class="image-slides>">
+            <div id="carouselExampleIndicators" class="carousel slide carousel-fade" data-ride="carousel">
+                <ol class="carousel-indicators">
+                    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="5"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="6"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="7"></li>
+                </ol>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img class="d-block w-100" src="Images/simage1.jpg" alt="First slide">
+                    </div>
+                    <div class="carousel-item">
+                        <img class="d-block w-100" src="Images/simage2.jpg" alt="Second slide">
+                    </div>
+                    <div class="carousel-item">
+                        <img class="d-block w-100" src="Images/simage3.jpg" alt="Third slide">
+                    </div>
+                    <div class="carousel-item">
+                        <img class="d-block w-100" src="Images/simage4.jpg" alt="First slide">
+                    </div>
+                    <div class="carousel-item">
+                        <img class="d-block w-100" src="Images/simage5.jpg" alt="Second slide">
+                    </div>
+                    <div class="carousel-item">
+                        <img class="d-block w-100" src="Images/simage6.jpg" alt="Third slide">
+                    </div>
+                    <div class="carousel-item">
+                        <img class="d-block w-100" src="Images/simage7.jpg" alt="First slide">
+                    </div>
+                    <div class="carousel-item">
+                        <img class="d-block w-100" src="Images/simage8.jpg" alt="Second slide">
+                    </div>
+                </div>
+                <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+        </section>
+        <section>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6 col-sm-6 Caption">
+                        <h1 class="Caption-header">Feeling <span class="hungry">Hungry ?</span></h1>
+                        <!-- <p class="Caption-para">Eat what you Deserve</p> -->
+                        <div class="Order-now">
+                            <a class="Order-now-link" href="#"><i class="fas fa-utensils nav-icon nav-icon-order"></i> Order Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="features">
+            <div class="row">
+                <div class="col-lg-4 features-section">
+                    <i class="fas fa-check-circle feature_icon"></i>
+                    <h3>Fast Delivery.</h3>
+                    <p class="feature_para">We are always ready to serve you.</p>
+                </div>
+                <div class="col-lg-4 features-section">
+                    <i class="fas fa-heart feature_icon"></i>
+                    <h3>Made with love</h3>
+                    <p class="feature_para">We add more love than sugar.</p>
+                </div>
+                <div class="col-lg-4  features-section">
+                    <i class="far fa-grin-hearts feature_icon"></i>
+                    <h3>Taste So Good</h3>
+                    <p class="feature_para">Stop Reading and start Ordering.</p>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="subscribe">
+                <div>
+                    <h1 class="subscribe-header">Get Notified!</h1>
+                    <p class="subscribe-para">Get your offers <i class="fas fa-percent"></i> and save money <i class="fas fa-rupee-sign"></i>.</p>
+                </div>
+                <div class="sub-input">
+                    <input class="subscribe-input" type="email" id="email" name="email" placeholder="Email">
+                    <input class="subscribe-btn" type="submit" value="Subscribe">
+                </div>
+            </div>
+        </section>
+
+        <section id="about-us">
+            <div class="about-us">
+                <h1>About Us</h1>
+                <hr class="about-us-line">
+            </div>
+            <div class="container about">
+                <div class="about-row">
+                    <div class="row">
+                        <div class="col-lg-6 col-md-6 col-sm-12 founder">
+                            <img class="avatar" src="Images/Founders/founder1.jpeg">
+
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-sm-12">
+                            <p class="about-para"> "I always wanted to serve people and make a lot of friends. So we got an idea of starting a cafe called FOODY BUDDY. We managed to get the funding and we also learned alot about marketing and promotioms by being in the college
+                                clubs. I learned some cooking in my Qurantine time. Food is something we all love"
+                            </p>
+                            <p class="about-para founder-name">-S.ROHIT</p>
+                        </div>
+                    </div>
+                    <div class="row flex-reverse">
+                        <div class="col-lg-6 col-md-6 col-sm-12">
+                            <p class="about-para">Another productive way to use this tool to begin a daily writing routine. One way is to generate a random paragraph with the intention to try to rewrite it while still keeping the original meaning. The purpose here is to just
+                                get the writing started so that when the writer goes onto their day's writing projects, words are already flowing from their fingers.</p>
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-sm-12 founder">
+                            <img class="avatar" src="https://th.thgim.com/business/article16939232.ece/alternates/FREE_435/21bmarr-Cyrus-R+G3811C2D0.3.jpg.jpg">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="container-fluid contact" id="contact">
+            <div class="row row-contact">
+                <div class="col-lg-4 col-md-4 col-sm-12 col-contact">
+                    <a class="contact-icon" href="#"><i class="fas fa-utensils nav-icon "></i> <span class="logo-foody">Foody</span> <span class="buddy-logo">Buddy</span></a>
+                    <h1 class="contact-header1">10 AM - 11 PM</h1>
+                    <p class="contact-para">No 8/3, Elgi Nagar,</p>
+                    <p class="contact-para">singanallur,</p>
+                    <p class="contact-para">Coimbatore - 641111</p>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-12 col-contact">
+                    <h1 class="contact-header">Connect with Us</h1>
+                    <p class="contact-para"><i class="fas fa-phone"></i> 9629028119</p>
+                    <p class="contact-para"><i class="far fa-envelope"></i> mail@gmail.com</p>
+                    <ul class="social-icon-ul">
+                        <li class="social-icon-link f"><a><i class="fab fa-facebook social-icon"></i></a></li>
+                        <li class="social-icon-link i "><a><i class="fab fa-instagram social-icon"></i></a></li>
+                        <li class="social-icon-link f"><a><i class="fab fa-twitter social-icon"></i></a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-12 col-contact">
+                    <h1 class="contact-header">Useful Links</h1>
+                    <ul>
+                        <li class="contact-link">
+                            <a class="contact-link" href="#">Home</a>
+                        </li>
+                        <li class="contact-link">
+                            <a class="contact-link" href="# ">About</a>
+                        </li>
+                        <li class="contact-link">
+                            <a class="contact-link" href="# ">Menu</a>
+                        </li>
+                        <li class="contact-link">
+                            <a class="contact-link" id="sign-in-link-b" href="# ">Sign In</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            </div>
+            </div>
+        </section>
+        <p class="Created "><i class="fas fa-utensils nav-icon foot-icon "></i> Created by Rohit | Avinash <i class="fas fa-utensils nav-icon foot-icon "></i></p>
+        <script src="home.js "></script>
+    </main>
+</body>
+
+</html>

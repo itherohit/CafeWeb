@@ -1,0 +1,477 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    /* font-family: 'Montserrat', sans-serif;
+    font-family: 'Roboto', sans-serif; 
+    font-family: 'Caveat', cursive;*/
+}
+
+::-webkit-scrollbar {
+    width: 7px;
+}
+
+
+/* Track */
+
+::-webkit-scrollbar-track {
+    background-color: transparent;
+    opacity: 0.4;
+}
+
+
+/* Handle */
+
+::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 6px;
+}
+
+
+/* Handle on hover */
+
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+.logo {
+    max-width: 20%;
+    max-height: 20%;
+    margin-top: 2%;
+    margin-left: 30px;
+}
+
+.navbar {
+    height: 60px;
+    width: 100%;
+    padding: 0% 3%;
+    background-color: transparent;
+}
+
+.nav-scrolled {
+    background-color: #17181A;
+    transition: 0.5s ease-in-out;
+}
+
+.nav-link {
+    color: gray;
+    margin-right: 25px;
+    font-size: 1rem;
+    font-family: 'Roboto', sans-serif;
+}
+
+.logo-foody {
+    font-size: 1.3rem;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    color: white;
+    margin-left: 5px;
+}
+
+.buddy-logo {
+    margin-left: 5px;
+    font-size: 1.5rem;
+    color: yellow;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+}
+
+.nav-link.active,
+.nav-link:hover {
+    background: #F73859;
+    border-radius: 100px;
+    transform: scale(1.1);
+    color: white;
+    border: none;
+    transition: 0.1s;
+}
+
+.nav-icon {
+    font-size: 30px;
+}
+
+.d-block {
+    max-height: 600px;
+}
+
+.carousel {
+    position: absolute;
+    z-index: -1;
+}
+
+.Caption {
+    padding: 8% 4%;
+    margin-top: 3%;
+    z-index: 1;
+}
+
+.Caption-header {
+    color: white;
+    font-size: 100px;
+    font-weight: bolder;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.hungry {
+    color: yellow;
+}
+
+.Order-now {
+    box-sizing: 10px;
+    margin: 20px;
+    padding: 10% 15%;
+    border-color: #F73859;
+}
+
+.Order-now-link {
+    border: 3px solid white;
+    font-family: 'Montserrat', sans-serif;
+    border-radius: 10px;
+    font-size: 30px;
+    color: white;
+    padding: 5%;
+}
+
+.Order-now-link:hover {
+    text-decoration: none;
+    transform: scale(1.1);
+    color: yellow;
+    transition: 0.3s;
+}
+
+.Order-now:hover {
+    transform: scale(1.1);
+    color: white;
+}
+
+.features {
+    padding: 0% 5%;
+    text-align: center;
+    background-color: white;
+}
+
+.features-section {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.feature_icon {
+    font-size: 3rem;
+    padding: 3% 0;
+    color: #F73859;
+}
+
+.feature_icon:hover {
+    transform: scale(1.4);
+}
+
+h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bolder;
+    font-size: 1.5rem;
+}
+
+.feature_para {
+    padding: 10px 20px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.about-us {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 4rem;
+    font-weight: bold;
+    text-align: center;
+    text-decoration-color: #F73859;
+}
+
+.about-us-line {
+    margin-top: 1%;
+    width: 23%;
+    color: #F73859;
+    height: 7px;
+    background-color: #F73859;
+}
+
+.founder-name {
+    text-align: right;
+}
+
+.about-para {
+    font-family: 'Caveat', cursive;
+    line-height: 1;
+    font-weight: 300;
+    font-size: 2rem;
+    color: #F73859;
+    padding: 3%;
+    word-spacing: 5px;
+}
+
+.row {
+    margin-bottom: 5%;
+}
+
+.about-row {
+    padding: 5%;
+}
+
+.founder {
+    text-align: center;
+    margin: auto;
+}
+
+.avatar {
+    max-width: 250px;
+    max-width: 250px;
+    border-radius: 500px;
+    margin: auto;
+}
+
+.col-contact {
+    padding: 2% 5%;
+    background-color: black;
+    height: 250px;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+}
+
+.contact-header {
+    padding: 4% 0%;
+    font-weight: bold;
+    font-size: 1.8rem;
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+}
+
+.contact-header1 {
+    padding: 5% 0%;
+    font-weight: bold;
+    font-size: 1.7rem;
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+}
+
+.contact-para {
+    padding: 2% 0%;
+    font-weight: bold;
+    color: rgb(90, 90, 90);
+}
+
+.Created {
+    text-align: center;
+    font-size: 1.5rem;
+    font-family: 'Montserrat', sans-serif;
+    margin: auto;
+    padding: 0% 0% 3% 0%;
+}
+
+.foot-icon {
+    padding: 0% 2%;
+}
+
+.contact-icon {
+    font-size: 30px;
+    color: white;
+    outline: none;
+    text-decoration: none;
+}
+
+.contact-icon:hover {
+    transition: scale(1.2);
+    color: white;
+    outline: none;
+    text-decoration: none;
+}
+
+.contact-link {
+    color: grey;
+    padding: 2% 2%;
+}
+
+.contact-link:hover {
+    color: yellow;
+    text-decoration: none;
+}
+
+.social-icon-ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2% 30%;
+}
+
+.social-icon {
+    font-size: 30px;
+}
+
+.social-icon-link {
+    padding: 4%;
+}
+
+.f:hover {
+    transform: scale(1.4);
+    color: rgb(33, 35, 153);
+}
+
+.i:hover {
+    transform: scale(1.4);
+    color: rgb(194, 8, 79);
+}
+
+.subscribe {
+    background-color: #F73859;
+    text-align: center;
+    margin: 3% auto 5% auto;
+    padding: 4%;
+}
+
+.subscribe-header {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 5rem;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+    text-decoration-color: #F73859;
+    margin-bottom: 1%;
+}
+
+.sub-input {
+    padding: 0% 15%;
+}
+
+.subscribe-para {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    color: white;
+    text-align: center;
+    margin-bottom: 3%;
+}
+
+.subscribe-input {
+    width: 30%;
+    height: 4%;
+    border-radius: 20px;
+    border: none;
+    color: gray;
+    font-family: 'Roboto', sans-serif;
+    padding: 1% 3%;
+    box-sizing: none;
+    outline: none;
+}
+
+.subscribe-btn {
+    font-family: 'Roboto', sans-serif;
+    color: #F73859;
+    padding: 1%;
+    background-color: white;
+    border-radius: 20px;
+    border: none;
+    box-sizing: none;
+    outline: none;
+    margin-left: 1%;
+}
+
+.subscribe-btn:hover {
+    transform: scale(1.2);
+}
+
+@media (max-width:988px) {
+    .nav-link.active,
+    .nav-link:hover {
+        background: transparent;
+        transform: scale(1.1);
+        color: #F73859;
+        border: none;
+        transition: 0.1s;
+    }
+    .navbar-nav {
+        text-align: center;
+        background-color: transparent;
+        border-radius: 20px;
+    }
+    .about-us-line {
+        width: 40%;
+    }
+}
+
+@media (max-width:600px) {
+    .sub-input {
+        padding: 0% 0%;
+    }
+    .subscribe-header {
+        font-family: 'Montserrat', sans-serif;
+        font-size: 3.5rem;
+        font-weight: bold;
+        color: white;
+        text-align: center;
+        text-decoration-color: #F73859;
+        margin-bottom: 1%;
+    }
+    .Caption {
+        padding: 15% 0% 5% 15%;
+        margin-top: 3%;
+        z-index: 1;
+    }
+    .Caption-header {
+        width: 80%;
+        color: white;
+        font-size: 50px;
+        font-weight: bolder;
+        font-family: 'Montserrat', sans-serif;
+    }
+    .Order-now {
+        box-sizing: 1px;
+        margin: 10px;
+        padding: 7% 4%;
+        border-color: #F73859;
+    }
+    .Order-now-link {
+        border: 1.5px solid white;
+        font-family: 'Montserrat', sans-serif;
+        border-radius: 10px;
+        font-size: 15px;
+        color: white;
+        padding: 3%;
+    }
+    .nav-icon-order {
+        font-size: 15px;
+    }
+    .Order-now-link:hover {
+        text-decoration: none;
+        transform: scale(1.1);
+        color: yellow;
+        transition: 0.3s;
+    }
+    .Order-now:hover {
+        transform: scale(1.05);
+        color: white;
+    }
+    .about-us-line {
+        margin-top: 1%;
+        width: 50vh;
+        color: #F73859;
+        height: 7px;
+        background-color: #F73859;
+    }
+    .flex-reverse {
+        flex-direction: column-reverse;
+    }
+    .avatar {
+        max-width: 150px;
+        max-width: 150px;
+        border-radius: 500px;
+        margin: auto;
+    }
+    .about-para {
+        font-family: 'Caveat', cursive;
+        line-height: 1;
+        font-weight: 300;
+        font-size: 1.5rem;
+        color: #F73859;
+        padding: 3%;
+        word-spacing: 5px;
+    }
+}
