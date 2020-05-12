@@ -1,0 +1,353 @@
+body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background-image: url("Images/bg.jpg");
+    background-size: cover;
+}
+
+.nav-color {
+    background: rgba(2, 2, 2, 0.75);
+    box-shadow: 2px 8px 30px black;
+}
+
+.Pending-orders-row {
+    max-height: 85vh;
+}
+
+.pending-cards-col {
+    height: 85vh;
+    padding-top: 7.5vh;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 4vh;
+}
+
+.Pending-orders-details {
+    height: 85vh;
+}
+
+.Pending-orders-cards {
+    width: 50vh;
+    height: 22.5vh;
+    background-color: aliceblue;
+    box-shadow: 28px 24px 66px -2px rgba(0, 0, 0, 0.75);
+    border-radius: 20px;
+    margin: auto;
+    padding: 6%;
+    margin-top: 10%;
+    transition: 0.3s;
+    display: flex;
+}
+
+.Pending-orders-cards:hover {
+    transform: scale(1.1);
+}
+
+.info-circle {
+    width: 35%;
+    height: 100%;
+    border-radius: 500px;
+    background-color: aliceblue;
+    position: relative
+}
+
+.info-circle:before {
+    content: '';
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 500px;
+    background-color: #F73859;
+    position: absolute;
+    z-index: -1;
+    transition: 0.3s;
+    transform: scale(0.9);
+}
+
+.Pending-orders-cards:hover .info-circle {
+    box-shadow: 0 0 25px #F73859;
+}
+
+.Pending-orders-cards:hover .info-circle:before {
+    transform: scale(1.05);
+}
+
+.Pending-orders-cards:hover .info-header {
+    position: absolute;
+    top: 20%;
+    left: 20%;
+    color: #F73859;
+    font-size: 3.5rem;
+    font-weight: bold;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.info-header {
+    position: absolute;
+    top: 7%;
+    left: 7.5%;
+    bottom: 15%;
+    right: 15%;
+    color: #F73859;
+    font-size: 5rem;
+    font-weight: bold;
+    font-family: 'Montserrat', sans-serif;
+    transition: 0.3s;
+}
+
+.info-details {
+    width: 60%;
+    height: 100%;
+    text-align: left;
+    color: #F73859;
+    font-size: 2rem;
+    padding-top: 6%;
+    padding-left: 5%;
+    font-weight: bold;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.Pending-orders-details {
+    background-color: aliceblue;
+    border-radius: 20px;
+    height: 80vh;
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 14vh;
+    margin-bottom: 4vh;
+    position: relative;
+}
+
+.clerk-name {
+    font-size: 3rem;
+    position: absolute;
+    top: 4%;
+    left: 4%;
+    font-family: 'Roboto', sans-serif;
+    color: #F73859;
+}
+
+.clerk-sec-date {
+    font-size: 1.2rem;
+    position: absolute;
+    top: 4%;
+    right: 4%;
+    font-family: 'Roboto', sans-serif;
+    color: #17181A;
+}
+
+.clerk-sec-time {
+    font-size: 1.1rem;
+    position: absolute;
+    top: 9%;
+    right: 4%;
+    font-family: 'Roboto', sans-serif;
+    color: #17181A;
+}
+
+.clerk-sec-list {
+    position: absolute;
+    font-size: 1.25rem;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    color: black;
+    top: 17.5%;
+    left: 4%;
+    display: flex;
+}
+
+.clerk-sec-list-item {
+    color: black;
+    text-decoration: none;
+    text-align: left;
+    width: 170px;
+}
+
+.clerk-sec-list-btn {
+    color: #17181A;
+    outline: none !important;
+    font-size: 1.25rem;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    background: none;
+    border: none;
+    padding: 0%;
+    padding-bottom: 2%;
+    text-decoration: none;
+}
+
+.clerk-sec-list-btn:hover {
+    border: none;
+    outline: none;
+    text-decoration: none;
+    color: #17181A;
+    border-bottom: 3px solid #F73859;
+    border-radius: 2px;
+}
+
+.clerk-sec-pennding-orders {
+    position: absolute;
+    top: 25%;
+    left: 4%;
+    height: 70%;
+    width: 92.5%;
+    background: rgb(247, 56, 89);
+    margin-left: auto;
+    border-radius: 15px;
+    display: flex;
+    overflow: scroll;
+}
+
+.clerk-sec-pennding-orders-header {
+    font-size: 1.5rem;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    padding: 3%;
+    color: #17181A;
+}
+
+.clerk-sec-pennding-orders-para {
+    color: #17181A;
+    font-size: 1.5rem;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    padding-left: 10%;
+    padding-bottom: 2%;
+}
+
+.clerk-sec-pennding-orders-info {
+    display: flex;
+    padding-top: 2%;
+}
+
+.clerk-sec-pennding-orders-order {
+    color: rgb(117, 14, 45);
+    font-size: 1rem;
+    width: 60%;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    padding-left: 5%;
+    padding-top: 5px;
+}
+
+.clerk-sec-pennding-orders-div {
+    width: 45%;
+    padding-top: 3%;
+}
+
+* {
+    -webkit-tap-highlight-color: transparent;
+    outline: none;
+}
+
+#_checkbox {
+    display: none;
+}
+
+label {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    background-color: #f72414;
+    transform: translateY(-50%);
+    border-radius: 50%;
+    box-shadow: 0 7px 10px #ffbeb8;
+    cursor: pointer;
+    transition: 0.2s ease transform, 0.2s ease background-color, 0.2s ease box-shadow;
+    overflow: hidden;
+    z-index: 1;
+}
+
+label:before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: 0;
+    left: 0;
+    width: 70px;
+    height: 70px;
+    margin: 0 auto;
+    background-color: #fff;
+    transform: translateY(-50%);
+    border-radius: 50%;
+    box-shadow: inset 0 7px 10px #ffbeb8;
+    transition: 0.2s ease width, 0.2s ease height;
+}
+
+label:hover:before {
+    width: 55px;
+    height: 55px;
+    box-shadow: inset 0 7px 10px #ff9d96;
+}
+
+label:active {
+    transform: translateY(-50%) scale(0.9);
+}
+
+#tick_mark {
+    position: absolute;
+    top: -1px;
+    right: 0;
+    left: 0;
+    width: 60px;
+    height: 60px;
+    margin: 0 auto;
+    margin-left: 14px;
+    transform: rotateZ(-40deg);
+}
+
+#tick_mark:before,
+#tick_mark:after {
+    content: "";
+    position: absolute;
+    background-color: #fff;
+    border-radius: 2px;
+    opacity: 0;
+    transition: 0.2s ease transform, 0.2s ease opacity;
+}
+
+#tick_mark:before {
+    left: 0;
+    bottom: 0;
+    width: 10px;
+    height: 30px;
+    box-shadow: -2px 0 5px rgba(0, 0, 0, 0.23);
+    transform: translateY(-68px)
+}
+
+#tick_mark:after {
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 10px;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.23);
+    transform: translateX(78px)
+}
+
+#_checkbox:checked+label {
+    background-color: #07d410;
+    box-shadow: 0 7px 10px #92ff97;
+}
+
+#_checkbox:checked+label:before {
+    width: 0;
+    height: 0;
+}
+
+#_checkbox:checked+label #tick_mark:before,
+#_checkbox:checked+label #tick_mark:after {
+    transform: translate(0);
+    opacity: 1;
+}
+
+.check-tick {
+    position: absolute;
+    left: 4%;
+    top: 2%;
+    transform: scale(0.4);
+}

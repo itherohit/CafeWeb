@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat|Roboto&display=swap" rel="stylesheet">
+    <title>Foody Buddy</title>
+    <!-- Boot Strap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="cDahsboard.css">
+    <script src="https://kit.fontawesome.com/15f26acd7c.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+</head>
+
+<body onload="startTime()">
+    <section class="nav-bar-section">
+        <nav class="navbar navbar-dark nav-color navbar-expand-lg fixed-top">
+            <a class="navbar-brand animated tada delay-5s" href=""><i class="fas fa-utensils nav-icon"></i> <span class="logo-foody">Foody</span> <span class="buddy-logo">Buddy</span></a>
+            <button class="navbar-toggler " type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon nav-button"></span>
+        </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about-us">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Menu</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="sign-in-link" href="#">Sign In</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </section>
+    <section class="Pending-orders">
+        <div class="container-fluid">
+            <div class="row Pending-orders-row">
+                <div class="col-lg-4 col-sm-12 pending-cards-col justify-content-center">
+                    <div class="Pending-orders-cards">
+                        <div class="info-circle">
+                            <h1 class="info-header">5</h1>
+                        </div>
+                        <div class="info-details">
+                            <h1>Walk-In Customers</h1>
+                        </div>
+                    </div>
+                    <div class="Pending-orders-cards">
+                        <div class="info-circle">
+                            <h1 class="info-header">15</h1>
+                        </div>
+                        <div class="info-details">
+                            <h1>Pending Orders</h1>
+                        </div>
+                    </div>
+                    <div class="Pending-orders-cards">
+                        <div class="info-circle">
+                            <h1 class="info-header">25</h1>
+                        </div>
+                        <div class="info-details">
+                            <h1>Delivered Today</h1>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-8 col-sm-12 ">
+                    <div class=" Pending-orders-details ">
+                        <div class="clerk-name">
+                            <h1>Hey, Rohit</h1>
+                        </div>
+                        <div class="clerk-sec-date">
+                            <h1>21/05/2020</h1>
+                        </div>
+                        <div class="clerk-sec-time" id="time"></div>
+                        <ul class="clerk-sec-list">
+                            <li class="clerk-sec-list-item">
+                                <button class="clerk-sec-list-btn">Walk-In Orders</button>
+                            </li>
+                            <li class="clerk-sec-list-item">
+                                <button class="clerk-sec-list-btn">Online Orders</button>
+                            </li>
+                            <li class="clerk-sec-list-item">
+                                <button class="clerk-sec-list-btn">Delivered</button>
+                            </li>
+                        </ul>
+                        <div class="clerk-sec-pennding-orders">
+                            <div class="clerk-sec-pennding-orders-div">
+                                <h1 class="clerk-sec-pennding-orders-header">Online Orders</h1>
+                                <div class="clerk-sec-pennding-orders-info">
+                                    <div class="check-tick">
+                                        <input type="checkbox" id="_checkbox">
+                                        <label for="_checkbox">
+                                        <div id="tick_mark"></div>
+                                        </label>
+                                    </div>
+                                    <p class="clerk-sec-pennding-orders-para">Heojoevon</p>
+                                    <p class="clerk-sec-pennding-orders-order">Burger Pizza....</p>
+                                </div>
+                                <div class="clerk-sec-pennding-orders-info">
+                                    <p class="clerk-sec-pennding-orders-para">Heojoevon</p>
+                                    <p class="clerk-sec-pennding-orders-order">Burger Pizza....</p>
+                                </div>
+                                <div class="clerk-sec-pennding-orders-info">
+                                    <p class="clerk-sec-pennding-orders-para">Heojoevon</p>
+                                    <p class="clerk-sec-pennding-orders-order">Burger Pizza....</p>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </section>
+    <script>
+        function startTime() {
+            var today = new Date();
+            var h = today.getHours();
+            var m = today.getMinutes();
+            m = checkTime(m);
+            if (h >= 12) {
+                var s = " PM ";
+            } else {
+                var s = " AM ";
+            }
+            document.getElementById('time').innerHTML =
+                h % 12 + " : " + m + s;
+            var t = setTimeout(startTime, 500);
+        }
+
+        function checkTime(i) {
+            if (i < 10) {
+                i = "0" + i
+            }; // add zero in front of numbers < 10
+            return i;
+        }
+    </script>
+</body>
+
+</html>
